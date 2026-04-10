@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Golf Solitaire - Layout Sketch</title>
+<style>
+  body { background: #2d6a2d; font-family: Arial, sans-serif; display:flex; flex-direction:column; align-items:center; padding:20px; }
+  h1 { color: white; font-size: 22px; margin-bottom:4px; }
+  p  { color: #cfc; font-size: 13px; margin:0 0 16px 0; }
+  svg text { font-family: Arial, sans-serif; }
+</style>
+</head>
+<body>
+<h1>Golf Solitaire — Layout Sketch</h1>
+<p>7 columns × 5 rows (35 face-up tableau cards) &nbsp;|&nbsp; Draw pile (17 cards) &nbsp;|&nbsp; Discard/Target pile</p>
+<svg width="780" height="520" style="background:#1a5c1a; border-radius:12px; padding:10px;">
+
+  <!-- Column labels -->
+  <text x="60"  y="28" fill="#aaffaa" font-size="13" text-anchor="middle">Col 0</text>
+  <text x="160" y="28" fill="#aaffaa" font-size="13" text-anchor="middle">Col 1</text>
+  <text x="260" y="28" fill="#aaffaa" font-size="13" text-anchor="middle">Col 2</text>
+  <text x="360" y="28" fill="#aaffaa" font-size="13" text-anchor="middle">Col 3</text>
+  <text x="460" y="28" fill="#aaffaa" font-size="13" text-anchor="middle">Col 4</text>
+  <text x="560" y="28" fill="#aaffaa" font-size="13" text-anchor="middle">Col 5</text>
+  <text x="660" y="28" fill="#aaffaa" font-size="13" text-anchor="middle">Col 6</text>
+
+  <!-- Row labels -->
+  <text x="10" y="80"  fill="#aaffaa" font-size="12" text-anchor="middle">R0</text>
+  <text x="10" y="145" fill="#aaffaa" font-size="12" text-anchor="middle">R1</text>
+  <text x="10" y="210" fill="#aaffaa" font-size="12" text-anchor="middle">R2</text>
+  <text x="10" y="275" fill="#aaffaa" font-size="12" text-anchor="middle">R3</text>
+  <text x="10" y="340" fill="#aaffaa" font-size="12" text-anchor="middle">R4</text>
+  <text x="10" y="50"  fill="#ffdd88" font-size="11" text-anchor="middle">↑top</text>
+  <text x="10" y="368" fill="#ffdd88" font-size="11" text-anchor="middle">↓front</text>
+
+  <!-- 7 columns x 5 rows of cards -->
+  <!-- Each card: width=80, height=56, col spacing=100, row spacing=65 -->
+  <!-- Cols start at x=20, rows start at y=38 -->
+
+  <!-- COL 0 (x=20) -->
+  <rect x="20"  y="45"  width="80" height="56" rx="6" fill="white" stroke="#333" stroke-width="1.5"/>
+  <text x="60"  y="78"  fill="#333" font-size="11" text-anchor="middle">face-up</text>
+  <rect x="20"  y="110" width="80" height="56" rx="6" fill="white" stroke="#333" stroke-width="1.5"/>
+  <text x="60"  y="143" fill="#333" font-size="11" text-anchor="middle">face-up</text>
+  <rect x="20"  y="175" width="80" height="56" rx="6" fill="white" stroke="#333" stroke-width="1.5"/>
+  <text x="60"  y="208" fill="#333" font-size="11" text-anchor="middle">face-up</text>
+  <rect x="20"  y="240" width="80" height="56" rx="6" fill="white" stroke="#333" stroke-width="1.5"/>
+  <text x="60"  y="273" fill="#333" font-size="11" text-anchor="middle">face-up</text>
+  <rect x="20"  y="305" width="80" height="56" rx="6" fill="#fffde0" stroke="#e6a800" stroke-width="2.5"/>
+  <text x="60"  y="335" fill="#cc7700" font-size="11" text-anchor="middle" font-weight="bold">ACCESSIBLE</text>
+  <text x="60"  y="350" fill="#cc7700" font-size="10" text-anchor="middle">(bottom row)</text>
+
+  <!-- COL 1 (x=120) -->
+  <rect x="120" y="45"  width="80" height="56" rx="6" fill="white" stroke="#333" stroke-width="1.5"/>
+  <rect x="120" y="110" width="80" height="56" rx="6" fill="white" stroke="#333" stroke-width="1.5"/>
+  <rect x="120" y="175" width="80" height="56" rx="6" fill="white" stroke="#333" stroke-width="1.5"/>
+  <rect x="120" y="240" width="80" height="56" rx="6" fill="white" stroke="#333" stroke-width="1.5"/>
+  <rect x="120" y="305" width="80" height="56" rx="6" fill="#fffde0" stroke="#e6a800" stroke-width="2.5"/>
+
+  <!-- COL 2 (x=220) -->
+  <rect x="220" y="45"  width="80" height="56" rx="6" fill="white" stroke="#333" stroke-width="1.5"/>
+  <rect x="220" y="110" width="80" height="56" rx="6" fill="white" stroke="#333" stroke-width="1.5"/>
+  <rect x="220" y="175" width="80" height="56" rx="6" fill="white" stroke="#333" stroke-width="1.5"/>
+  <rect x="220" y="240" width="80" height="56" rx="6" fill="white" stroke="#333" stroke-width="1.5"/>
+  <rect x="220" y="305" width="80" height="56" rx="6" fill="#fffde0" stroke="#e6a800" stroke-width="2.5"/>
+
+  <!-- COL 3 (x=320) -->
+  <rect x="320" y="45"  width="80" height="56" rx="6" fill="white" stroke="#333" stroke-width="1.5"/>
+  <rect x="320" y="110" width="80" height="56" rx="6" fill="white" stroke="#333" stroke-width="1.5"/>
+  <rect x="320" y="175" width="80" height="56" rx="6" fill="white" stroke="#333" stroke-width="1.5"/>
+  <rect x="320" y="240" width="80" height="56" rx="6" fill="white" stroke="#333" stroke-width="1.5"/>
+  <rect x="320" y="305" width="80" height="56" rx="6" fill="#fffde0" stroke="#e6a800" stroke-width="2.5"/>
+
+  <!-- COL 4 (x=420) -->
+  <rect x="420" y="45"  width="80" height="56" rx="6" fill="white" stroke="#333" stroke-width="1.5"/>
+  <rect x="420" y="110" width="80" height="56" rx="6" fill="white" stroke="#333" stroke-width="1.5"/>
+  <rect x="420" y="175" width="80" height="56" rx="6" fill="white" stroke="#333" stroke-width="1.5"/>
+  <rect x="420" y="240" width="80" height="56" rx="6" fill="white" stroke="#333" stroke-width="1.5"/>
+  <rect x="420" y="305" width="80" height="56" rx="6" fill="#fffde0" stroke="#e6a800" stroke-width="2.5"/>
+
+  <!-- COL 5 (x=520) -->
+  <rect x="520" y="45"  width="80" height="56" rx="6" fill="white" stroke="#333" stroke-width="1.5"/>
+  <rect x="520" y="110" width="80" height="56" rx="6" fill="white" stroke="#333" stroke-width="1.5"/>
+  <rect x="520" y="175" width="80" height="56" rx="6" fill="white" stroke="#333" stroke-width="1.5"/>
+  <rect x="520" y="240" width="80" height="56" rx="6" fill="white" stroke="#333" stroke-width="1.5"/>
+  <rect x="520" y="305" width="80" height="56" rx="6" fill="#fffde0" stroke="#e6a800" stroke-width="2.5"/>
+
+  <!-- COL 6 (x=620) -->
+  <rect x="620" y="45"  width="80" height="56" rx="6" fill="white" stroke="#333" stroke-width="1.5"/>
+  <rect x="620" y="110" width="80" height="56" rx="6" fill="white" stroke="#333" stroke-width="1.5"/>
+  <rect x="620" y="175" width="80" height="56" rx="6" fill="white" stroke="#333" stroke-width="1.5"/>
+  <rect x="620" y="240" width="80" height="56" rx="6" fill="white" stroke="#333" stroke-width="1.5"/>
+  <rect x="620" y="305" width="80" height="56" rx="6" fill="#fffde0" stroke="#e6a800" stroke-width="2.5"/>
+
+  <!-- Bottom area: Draw pile + Discard pile -->
+  <text x="390" y="400" fill="white" font-size="14" text-anchor="middle" font-weight="bold">── Bottom of Screen ──</text>
+
+  <!-- Draw Pile -->
+  <rect x="100" y="415" width="80" height="56" rx="6" fill="#334466" stroke="#6699cc" stroke-width="2"/>
+  <rect x="106" y="421" width="80" height="56" rx="6" fill="#3a4d70" stroke="#6699cc" stroke-width="2"/>
+  <rect x="112" y="427" width="80" height="56" rx="6" fill="#4466aa" stroke="#6699cc" stroke-width="2"/>
+  <text x="152" y="458" fill="white" font-size="12" text-anchor="middle" font-weight="bold">DRAW</text>
+  <text x="152" y="472" fill="#aaccff" font-size="10" text-anchor="middle">17 cards</text>
+  <text x="152" y="490" fill="#aaccff" font-size="10" text-anchor="middle">(face-down)</text>
+
+  <!-- Discard / Target -->
+  <rect x="230" y="427" width="80" height="56" rx="6" fill="white" stroke="#ff6600" stroke-width="3"/>
+  <text x="270" y="452" fill="#ff6600" font-size="12" text-anchor="middle" font-weight="bold">TARGET</text>
+  <text x="270" y="467" fill="#cc4400" font-size="10" text-anchor="middle">face-up</text>
+  <text x="270" y="482" fill="#cc4400" font-size="10" text-anchor="middle">(discard pile)</text>
+
+  <!-- Legend -->
+  <rect x="430" y="415" width="300" height="90" rx="8" fill="#0a3a0a" stroke="#4a8a4a" stroke-width="1"/>
+  <text x="580" y="434" fill="white" font-size="13" text-anchor="middle" font-weight="bold">Golf Solitaire Rules</text>
+  <text x="445" y="452" fill="#cfc" font-size="11">• Click bottom-row card adjacent in rank to TARGET</text>
+  <text x="445" y="467" fill="#cfc" font-size="11">• Suit doesn't matter. Ace &amp; King wrap (adjacent)</text>
+  <text x="445" y="482" fill="#cfc" font-size="11">• No moves? Click DRAW pile for new target card</text>
+  <text x="445" y="497" fill="#ffdd88" font-size="11">• WIN: clear all 35 tableau cards!</text>
+
+</svg>
+</body>
+</html>
